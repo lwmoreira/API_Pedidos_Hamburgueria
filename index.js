@@ -24,8 +24,8 @@ const checkUserId = (request, response, next) => {
 
 }
 
-const methodAllRoute = (request, response, next)=>{
-   
+const methodAllRoute = (request, response, next) => {
+
     const routeType = request.method
 
     console.log(`${routeType} - /orders`)
@@ -80,10 +80,10 @@ app.delete('/orders/:id', checkUserId, (request, response) => {
 })
 
 app.get('/orders/:id', checkUserId, (request, response) => {
-    
+
     const index = request.userIndex
 
-    return response.json(orders [index])
+    return response.json(orders[index])
 
 })
 
@@ -100,3 +100,7 @@ app.listen(port, () => {
     console.log(`🍔 Server started on port ${port}`)
 
 })
+
+
+"1" + 2 + 3
+console.log
